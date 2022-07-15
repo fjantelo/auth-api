@@ -8,3 +8,16 @@ Content-Type: application/json
   "password": "password",
   "password_confirmation": "password"
 }
+
+### User show
+GET http://localhost:3000/users/1.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc5MzIzODJ9.Y94kN8OTv5Q0k7gPqJavOwa9BATbe633s0MDO8wfB3g
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "morgan@example.com",
+  "password": "password"
+}
